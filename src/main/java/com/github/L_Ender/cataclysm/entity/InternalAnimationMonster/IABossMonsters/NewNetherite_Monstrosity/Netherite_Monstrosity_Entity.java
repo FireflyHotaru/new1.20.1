@@ -528,7 +528,7 @@ public class Netherite_Monstrosity_Entity extends IABoss_monster {
 
         this.floatStrider();
         if (this.level().isClientSide()) {
-            this.idleAnimationState.animateWhen(this.getAttackState() == 0, this.tickCount);
+            this.idleAnimationState.animateWhen(this.getAttackState() == 0 && this.getIsAwaken(), this.tickCount);
         }else{
             this.bossInfo.setLife(this.getLife());
         }
@@ -1277,7 +1277,7 @@ public class Netherite_Monstrosity_Entity extends IABoss_monster {
 
     @Override
     protected boolean canPlayMusic() {
-        return super.canPlayMusic() && !isSleep();
+        return super.canPlayMusic() && this.getIsAwaken();
     }
 
     @Override

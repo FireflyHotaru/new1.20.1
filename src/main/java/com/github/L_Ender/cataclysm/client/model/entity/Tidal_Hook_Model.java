@@ -59,15 +59,15 @@ public class Tidal_Hook_Model extends AdvancedEntityModel<Tidal_Hook_Entity> {
      * Sets this entity's model rotation angles
      */
 
-
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(body,claw,claw2,claw3,claw4);
+    public BasicModelPart root() {
+        return this.body;
     }
+
 
     @Override
     public Iterable<AdvancedModelBox> getAllParts() {
-        return ImmutableList.of(body);
+        return ImmutableList.of(body,claw,claw2,claw3,claw4);
     }
 
     public void setupAnim(Tidal_Hook_Entity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {

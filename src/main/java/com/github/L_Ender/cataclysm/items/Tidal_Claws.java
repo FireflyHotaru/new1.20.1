@@ -118,7 +118,7 @@ public class Tidal_Claws extends Cataclysm_Weapon implements ILeftClick {
                 double maxRange = 30;
                 double maxSpeed = 12;
 
-                Tidal_Hook_Entity hookshot = new Tidal_Hook_Entity(level, user, ItemStack.EMPTY);
+                Tidal_Hook_Entity hookshot = new Tidal_Hook_Entity(level, user, stack);
                 hookshot.setProperties(stack, maxRange, maxSpeed, user.getXRot(), user.getYRot(), 0f, 1.5f * (float) (maxSpeed / 10));
                 level.addFreshEntity(hookshot);
 

@@ -49,9 +49,8 @@ public class Coral_Spear_Model extends AdvancedEntityModel<ThrownCoral_Spear_Ent
 		head2.setTextureOffset(16, 0).addBox(-3.0F, -2.0F, 0.0F, 6.0F, 10.0F, 0.0F, 0.0F, false);
 	}
 
-	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(coral_spear);
+	public BasicModelPart root() {
+		return this.coral_spear;
 	}
 
 	@Override

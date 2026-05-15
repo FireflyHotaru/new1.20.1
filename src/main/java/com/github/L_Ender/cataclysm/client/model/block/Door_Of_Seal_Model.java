@@ -53,8 +53,9 @@ public class Door_Of_Seal_Model extends AdvancedEntityModel<Entity> {
 		this.updateDefaultPose();
 	}
 
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(roots);
+
+	public BasicModelPart root() {
+		return this.roots;
 	}
 
 	@Override

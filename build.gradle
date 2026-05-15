@@ -2,7 +2,7 @@ plugins {
     id 'idea'
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.74'
+    id 'net.neoforged.moddev' version '2.0.83'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -130,7 +130,7 @@ dependencies {
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
     compileOnly "mezz.jei:jei-1.21-neoforge-api:${jei_version}"
     implementation "mezz.jei:jei-1.21-neoforge:${jei_version}"
-    implementation "curse.maven:lionfish-api-1001614:6168249"
+    implementation "curse.maven:lionfish-api-1001614:8094835"
 
     // Use the full Curios API jar at runtime
     implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
@@ -140,10 +140,11 @@ dependencies {
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
     runtimeOnly "curse.maven:tslatentitystatus-tes-830420:6041374"
     runtimeOnly "curse.maven:mob-battle-mod-268746:5780368"
-    //implementation "curse.maven:mowzies-mobs-250498:6700443"
+    //runtimeOnly "curse.maven:embeddium-908741:6118392"
+    runtimeOnly "curse.maven:sodium-394468:6382651"
     // Example mod dependency using a file as dependency
     // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
-
+    // runtimeOnly "curse.maven:irisshaders-455508:6661598"
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
 

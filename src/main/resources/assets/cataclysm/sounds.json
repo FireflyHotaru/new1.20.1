@@ -1468,57 +1468,6 @@
       }
     ]
   },
-  "lacerton_ambient": {
-    "subtitle": "lacerton_ambient.sub",
-    "sounds": [
-      {
-        "name": "cataclysm:entity/koboleton_idle1",
-        "volume": 1.0,
-        "pitch": 0.7
-      },
-      {
-        "name": "cataclysm:entity/koboleton_idle2",
-        "volume": 1.0,
-        "pitch": 0.7
-      },
-      {
-        "name": "cataclysm:entity/koboleton_idle3",
-        "volume": 1.0,
-        "pitch": 0.7
-      }
-    ]
-  },
-  "lacerton_hurt": {
-    "subtitle": "lacerton_hurt.sub",
-    "sounds": [
-      {
-        "name": "cataclysm:entity/koboleton_hurt1",
-        "volume": 1.0,
-        "pitch": 0.7
-      },
-      {
-        "name": "cataclysm:entity/koboleton_hurt2",
-        "volume": 1.0,
-        "pitch": 0.7
-      },
-      {
-        "name": "cataclysm:entity/koboleton_hurt3",
-        "volume": 1.0,
-        "pitch": 0.7
-      }
-    ]
-  },
-  "lacerton_death": {
-    "subtitle": "lacerton_death.sub",
-    "sounds": [
-      {
-        "name": "cataclysm:entity/koboleton_death",
-        "volume": 1.0,
-        "pitch": 0.7
-      }
-    ]
-  },
-
   "aptrgangr_hurt": {
     "subtitle": "aptrgangr_hurt.sub",
     "sounds": [

@@ -480,8 +480,8 @@ public class The_Baby_Leviathan_Model extends AdvancedEntityModel<The_Baby_Levia
 	}
 
 	@Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 	public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

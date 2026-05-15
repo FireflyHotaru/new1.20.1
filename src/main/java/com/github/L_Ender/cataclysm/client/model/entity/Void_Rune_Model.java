@@ -35,8 +35,8 @@ public class Void_Rune_Model extends AdvancedEntityModel<Void_Rune_Entity> {
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
     @Override

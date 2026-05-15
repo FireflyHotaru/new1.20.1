@@ -7,7 +7,6 @@ import net.minecraft.client.animation.KeyframeAnimations;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
-
 @OnlyIn(Dist.CLIENT)
 public class Netherite_Monstrosity_Animation {
 	public static final AnimationDefinition IDLE = AnimationDefinition.Builder.withLength(2.25F).looping()
@@ -50,12 +49,12 @@ public class Netherite_Monstrosity_Animation {
 		.build();
 
 	public static final AnimationDefinition WALK = AnimationDefinition.Builder.withLength(2.2083F).looping()
-		.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.ROTATION, 
+		.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.ROTATION, 
 			new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 			new Keyframe(1.125F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 			new Keyframe(2.2083F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM)
 		))
-		.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION, 
+		.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION, 
 			new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, -2.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 			new Keyframe(0.5F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 			new Keyframe(1.125F, KeyframeAnimations.posVec(0.0F, -2.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
@@ -465,14 +464,14 @@ public class Netherite_Monstrosity_Animation {
 			.build();
 
 	public static final AnimationDefinition PHASE = AnimationDefinition.Builder.withLength(2.6667F)
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.ROTATION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.ROTATION,
 					new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.5417F, KeyframeAnimations.degreeVec(0.0F, -12.5F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.7917F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(1.7083F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(2.5F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM)
 			))
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION,
 					new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.5417F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.7917F, KeyframeAnimations.posVec(0.0F, -10.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
@@ -651,7 +650,7 @@ public class Netherite_Monstrosity_Animation {
 			.build();
 
 	public static final AnimationDefinition FIRE = AnimationDefinition.Builder.withLength(2.1667F)
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION,
 					new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.7083F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(1.0F, KeyframeAnimations.posVec(0.0F, -2.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
@@ -977,8 +976,9 @@ public class Netherite_Monstrosity_Animation {
 			))
 			.build();
 
+
 	public static final AnimationDefinition OVERPOWER  = AnimationDefinition.Builder.withLength(3.75F)
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION,
 					new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.375F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.5833F, KeyframeAnimations.posVec(0.0F, -3.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
@@ -1247,7 +1247,7 @@ public class Netherite_Monstrosity_Animation {
 
 
 	public static final AnimationDefinition DEATH = AnimationDefinition.Builder.withLength(2.5F)
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION,
 					new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
 					new Keyframe(1.0417F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
 					new Keyframe(1.1667F, KeyframeAnimations.posVec(0.0F, -1.17F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
@@ -1400,14 +1400,14 @@ public class Netherite_Monstrosity_Animation {
 
 
 	public static final AnimationDefinition FLARE_SHOT = AnimationDefinition.Builder.withLength(3.0F)
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.ROTATION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.ROTATION,
 					new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(1.7083F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(2.0F, KeyframeAnimations.degreeVec(0.0F, -7.5F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(2.375F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(3.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM)
 			))
-			.addAnimation("root", new AnimationChannel(AnimationChannel.Targets.POSITION,
+			.addAnimation("roots", new AnimationChannel(AnimationChannel.Targets.POSITION,
 					new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.5F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(0.625F, KeyframeAnimations.posVec(0.0F, -2.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),

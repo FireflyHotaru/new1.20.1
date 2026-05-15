@@ -80,7 +80,7 @@ public class ClientEvent {
         NeoForge.EVENT_BUS.addListener(ClientEvent::renderBossOverlay);
         NeoForge.EVENT_BUS.addListener(ClientEvent::onCameraSetup);
         NeoForge.EVENT_BUS.addListener(ClientEvent::onCameraZoom);
-       // NeoForge.EVENT_BUS.addListener(ClientEvent::MovementInput);
+        NeoForge.EVENT_BUS.addListener(ClientEvent::MovementInput);
         NeoForge.EVENT_BUS.addListener(ClientEvent::onPreRenderHUD);
         NeoForge.EVENT_BUS.addListener(ClientEvent::onPostRenderHUD);
 
@@ -245,7 +245,7 @@ public class ClientEvent {
 
 
 
-/*
+
     public static void MovementInput(MovementInputUpdateEvent event) {
         Player player = Minecraft.getInstance().player;
         if (player != null) {
@@ -267,7 +267,6 @@ public class ClientEvent {
     }
 
 
- */
 
 
 

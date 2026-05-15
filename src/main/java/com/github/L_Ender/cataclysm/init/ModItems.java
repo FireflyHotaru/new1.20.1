@@ -1084,6 +1084,9 @@ public class ModItems {
         if (!ConfigHolder.COMMON_SPEC.isLoaded()) {
             Cataclysm.LOGGER.error("Could not modify default components due to config not being loaded yet");
         } else {
+            event.modify(ModItems.MONSTROUS_HELM.get(), (builder) -> {
+                builder.set(DataComponents.UNBREAKABLE, new Unbreakable(true));
+            });
             event.modify(ModItems.IGNITIUM_HELMET.get(), (builder) -> {
                 builder.set(DataComponents.UNBREAKABLE, new Unbreakable(true));
                 AttributeUtils.mergeAttributes(builder, ModItems.IGNITIUM_HELMET.get(),

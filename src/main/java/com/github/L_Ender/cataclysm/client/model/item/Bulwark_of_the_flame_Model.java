@@ -82,7 +82,7 @@ public class Bulwark_of_the_flame_Model extends AdvancedEntityModel<Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 }

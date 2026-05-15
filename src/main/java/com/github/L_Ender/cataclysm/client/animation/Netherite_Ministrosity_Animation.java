@@ -7,7 +7,6 @@ import net.minecraft.client.animation.KeyframeAnimations;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
-
 /**
  * Made with Blockbench 4.11.2
  * Exported for Minecraft version 1.19 or later with Mojang mappings

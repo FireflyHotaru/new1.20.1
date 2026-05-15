@@ -326,9 +326,10 @@ public class Wadjet_Model extends AdvancedEntityModel<Wadjet_Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(everything);
+	public BasicModelPart root() {
+		return this.everything;
 	}
+
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

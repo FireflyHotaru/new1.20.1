@@ -30,9 +30,9 @@ public class Void_Howitzer_Model extends AdvancedEntityModel<Void_Howitzer_Entit
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 
 
 	public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

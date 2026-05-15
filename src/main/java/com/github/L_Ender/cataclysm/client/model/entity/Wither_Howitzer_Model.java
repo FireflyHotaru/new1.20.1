@@ -37,9 +37,9 @@ public class Wither_Howitzer_Model extends AdvancedEntityModel<Wither_Howitzer_E
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 
 
 	public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

@@ -104,9 +104,9 @@ public class Deepling_Brute_Model extends AdvancedEntityModel<Deepling_Brute_Ent
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

@@ -28,8 +28,8 @@ public class Ancient_Desert_Stele_Model extends AdvancedEntityModel<Ancient_Dese
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
     @Override

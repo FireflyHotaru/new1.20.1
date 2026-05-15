@@ -38,9 +38,8 @@ public class Abyss_Mine_Model extends AdvancedEntityModel<Entity> {
 		return ImmutableList.of(root,glass,glass2);
 	}
 
-	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root,glass,glass2);
+	public BasicModelPart root() {
+		return this.root;
 	}
 
 	@Override

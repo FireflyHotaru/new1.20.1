@@ -64,8 +64,9 @@ public class Altar_of_Abyss_Model extends AdvancedEntityModel<Entity> {
 		this.updateDefaultPose();
 	}
 
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
+	@Override
+	public BasicModelPart root() {
+		return this.root;
 	}
 
 	@Override

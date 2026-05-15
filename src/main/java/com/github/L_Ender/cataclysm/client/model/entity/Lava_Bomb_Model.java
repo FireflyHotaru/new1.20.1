@@ -22,8 +22,8 @@ public class Lava_Bomb_Model extends AdvancedEntityModel<Lava_Bomb_Entity> {
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
     @Override

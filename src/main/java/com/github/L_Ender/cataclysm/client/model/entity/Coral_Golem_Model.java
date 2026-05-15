@@ -341,8 +341,8 @@ public class Coral_Golem_Model extends AdvancedEntityModel<Coral_Golem_Entity> {
 	}
 
 	@Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 	public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

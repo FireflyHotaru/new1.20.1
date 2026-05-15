@@ -354,9 +354,9 @@ public class Amethyst_Crab_Model extends AdvancedEntityModel<Amethyst_Crab_Entit
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 
 	public void animate(Amethyst_Crab_Entity entity, float f, float f1, float f2, float f3, float f4) {
 		this.resetToDefaultPose();

@@ -471,8 +471,8 @@ public class Koboleton_Model extends AdvancedEntityModel<Koboleton_Entity> {
 	}
 
 	@Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 

@@ -193,9 +193,9 @@ public class Endermaptera_Model extends AdvancedEntityModel<Endermaptera_Entity>
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+    public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

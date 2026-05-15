@@ -157,9 +157,9 @@ public class Ceraunus_Item_Model extends AdvancedEntityModel<Entity> {
 
 				cube_r13);
 	}
-
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(anchor);
+	public BasicModelPart root() {
+		return this.anchor;
 	}
+
 }

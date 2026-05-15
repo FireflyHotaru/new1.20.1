@@ -4,6 +4,7 @@ import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
+
 /**
  * Made with Blockbench 4.9.4
  * Exported for Minecraft version 1.19 or later with Mojang mappings
