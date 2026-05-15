@@ -39,9 +39,9 @@ public class Coral_Bardiche_Model extends AdvancedEntityModel<ThrownCoral_Spear_
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

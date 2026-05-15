@@ -271,6 +271,7 @@ public class Wadjet_Model extends AdvancedEntityModel<Wadjet_Entity> {
 
 	@Override
 	public void renderToBuffer(PoseStack matrixStackIn, VertexConsumer bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
+
 		this.everything.render(matrixStackIn, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
 		if (tail != null) tail.render(matrixStackIn, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha, tailDynamic);
 		for (AdvancedModelBox AdvancedModelBox : tailOriginal) {
@@ -326,8 +327,8 @@ public class Wadjet_Model extends AdvancedEntityModel<Wadjet_Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(everything);
+	public BasicModelPart root() {
+		return this.everything;
 	}
 
 	@Override

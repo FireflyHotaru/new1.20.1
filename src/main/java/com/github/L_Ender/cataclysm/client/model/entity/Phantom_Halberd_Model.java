@@ -77,9 +77,9 @@ public class Phantom_Halberd_Model extends AdvancedEntityModel<Phantom_Halberd_E
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

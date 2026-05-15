@@ -61,9 +61,9 @@ public class Altar_of_Void_Model extends AdvancedEntityModel<Entity> {
 		this.updateDefaultPose();
 	}
 
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

@@ -174,8 +174,8 @@ public class Lionfish_Model extends AdvancedEntityModel<Lionfish_Entity> {
 	}
 
 	@Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 	public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

@@ -152,7 +152,7 @@ public class Wadjet_Entity extends Internal_Animation_Monster {
         if (entity instanceof Poison_Dart_Entity) {
             return false;
         }
-        if (!this.isSleep() && !source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
+        if (this.isSleep() && !source.is(DamageTypeTags.BYPASSES_INVULNERABILITY)) {
             return false;
         }
         if (this.canBlockDamageSource(source)) {
@@ -244,7 +244,7 @@ public class Wadjet_Entity extends Internal_Animation_Monster {
     }
 
     public boolean isSleep() {
-        return this.getAwaken() || this.getAttackState() == 2;
+        return !this.getAwaken() || this.getAttackState() == 2;
     }
 
     public void setSleep(boolean sleep) {

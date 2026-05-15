@@ -3538,8 +3538,8 @@ public class Ignis_Model extends AdvancedEntityModel<Ignis_Entity> {
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 

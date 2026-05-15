@@ -159,7 +159,7 @@ public class Ceraunus_Item_Model extends AdvancedEntityModel<Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(anchor);
+	public BasicModelPart root() {
+		return this.anchor;
 	}
 }

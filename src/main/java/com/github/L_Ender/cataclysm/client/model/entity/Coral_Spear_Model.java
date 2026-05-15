@@ -50,8 +50,8 @@ public class Coral_Spear_Model extends AdvancedEntityModel<ThrownCoral_Spear_Ent
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(coral_spear);
+	public BasicModelPart root() {
+		return this.coral_spear;
 	}
 
 	@Override

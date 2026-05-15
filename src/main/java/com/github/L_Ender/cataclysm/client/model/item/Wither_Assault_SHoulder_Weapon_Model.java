@@ -127,7 +127,7 @@ public class Wither_Assault_SHoulder_Weapon_Model extends AdvancedEntityModel<En
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 }

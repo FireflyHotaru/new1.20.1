@@ -30,8 +30,8 @@ public class Ender_Guardian_Bullet_Model extends AdvancedEntityModel<Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(renderer);
+	public BasicModelPart root() {
+		return this.renderer;
 	}
 
 	@Override

@@ -48,9 +48,9 @@ public class Sandstorm_Model extends AdvancedEntityModel<Sandstorm_Entity> {
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

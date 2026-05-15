@@ -71,8 +71,8 @@ public class Amethyst_Cluster_Projectile_Model extends AdvancedEntityModel<Ameth
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(roots);
+	public BasicModelPart root() {
+		return this.roots;
 	}
 
 

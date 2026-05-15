@@ -1075,8 +1075,8 @@ public class Ender_Guardian_Model extends AdvancedEntityModel<Ender_Guardian_Ent
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
     public void setRotationAngle(AdvancedModelBox AdvancedModelBox, float x, float y, float z) {

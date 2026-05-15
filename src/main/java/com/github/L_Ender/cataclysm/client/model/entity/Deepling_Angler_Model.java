@@ -142,9 +142,9 @@ public class Deepling_Angler_Model extends AdvancedEntityModel<Deepling_Angler_E
 	}
 
 	@Override
-	public Iterable<BasicModelPart> parts() {
-		return ImmutableList.of(root);
-	}
+	public BasicModelPart root() {
+        return this.root;
+    }
 
 	@Override
 	public Iterable<AdvancedModelBox> getAllParts() {

@@ -114,8 +114,8 @@ public class Incinerator_Model extends AdvancedEntityModel<Entity> {
     }
 
     @Override
-    public Iterable<BasicModelPart> parts() {
-        return ImmutableList.of(root);
+    public BasicModelPart root() {
+        return this.root;
     }
 
 }
