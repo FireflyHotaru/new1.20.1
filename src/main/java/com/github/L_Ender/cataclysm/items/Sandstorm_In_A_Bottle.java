@@ -54,10 +54,4 @@ public class Sandstorm_In_A_Bottle extends Item {
 	public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
 		return false;
 	}
-
-
-	@Override
-	public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flags) {
-		//tooltip.add(Component.translatable("item.cataclysm.sandstorm_in_a_bottle.desc", ModKeybind.KEY_ABILITY.getTranslatedKeyMessage()).withStyle(ChatFormatting.DARK_GREEN));
-	}
 }
