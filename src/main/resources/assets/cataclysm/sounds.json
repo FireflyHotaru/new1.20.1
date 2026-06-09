@@ -1,4 +1,13 @@
 {
+  "explosion": {
+    "subtitle": "subtitles.entity.generic.explode",
+    "sounds": [
+      "random/explode1",
+      "random/explode2",
+      "random/explode3",
+      "random/explode4"
+    ]
+  },
   "golemhurt": {
     "subtitle": "golemhurt.sub",
     "sounds": [
@@ -1672,23 +1681,6 @@
         "name": "cataclysm:entity/super_lightning_strike",
         "volume": 1.0,
         "pitch": 1.0
-      }
-    ]
-  },
-  "explosion": {
-    "subtitle": "explosion.sub",
-    "sounds": [
-      {
-        "name": "cataclysm:entity/explosion_1"
-      },
-      {
-        "name": "cataclysm:entity/explosion_2"
-      },
-      {
-        "name": "cataclysm:entity/explosion_3"
-      },
-      {
-        "name": "cataclysm:entity/explosion_4"
       }
     ]
   },
