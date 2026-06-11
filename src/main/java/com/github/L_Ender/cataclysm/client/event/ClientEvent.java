@@ -185,7 +185,7 @@ public class ClientEvent {
             if (player.isPassenger()) {
                 if (player.getVehicle() instanceof The_Leviathan_Tongue_Entity || player.getVehicle() instanceof IHoldEntity) {
                     if (event.getOverlay().id().equals(VanillaGuiOverlay.HELMET.id())) {
-                        Minecraft.getInstance().gui.setOverlayMessage(Component.translatable("entity.cataclysm.you_cant_escape"), false);
+                        Minecraft.getInstance().gui.setOverlayMessage(Component.translatable("misc.cataclysm.you_cant_escape"), false);
                     }
                 }
             }
